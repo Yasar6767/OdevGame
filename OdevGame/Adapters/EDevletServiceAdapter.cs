@@ -11,7 +11,7 @@ namespace OdevGame.Adapters
      
         public bool Check(Player player)
         {
-            if (player.Id == 1 && player.FirstName == "Yaşar" && player.LastName == "Akat" && player.IdentıtyNumber == "12345678901")
+            if (player.Id == 1 & player.FirstName == "Yaşar" & player.LastName == "Akat" & player.IdentıtyNumber == "12345678901")
             {
                 return true;
             }
