@@ -8,6 +8,9 @@ namespace OdevGame
 {
     public interface IPlayerCheckService
     {
-        bool Check(Player player);
+        bool Check(Player player)
+        {
+            return true;
+        }
     }
 }

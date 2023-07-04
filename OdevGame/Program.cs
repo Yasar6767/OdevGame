@@ -13,10 +13,10 @@ namespace OdevGame
         {
             Player player1 = new Player();
             player1.Id = 1;
-            player1.FirstName = "Yaşar";
+            player1.FirstName = "Yaşaar";
             player1.LastName = "Akat";
             player1.IdentıtyNumber = "12345678901";
-            player1.BirthYear = 1992;
+            player1.BirthYear = 1991;
 
 
             Player player2 = new Player();
@@ -25,6 +25,7 @@ namespace OdevGame
             player2.LastName = "Akat";
             player2.IdentıtyNumber = "45680375478";
             player2.BirthYear = 1991;
+
 
             PlayerManager playerManager = new PlayerManager(new EDevletServiceAdapter());
             playerManager.Add(player1);

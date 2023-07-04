@@ -6,16 +6,23 @@ namespace OdevGame
 {
     internal class PlayerManager: IPlayerService
     {
-        private EDevletServiceAdapter eDevletServiceAdapter;
+        EDevletServiceAdapter _eDevletServiceAdapter;
 
         public PlayerManager(EDevletServiceAdapter eDevletServiceAdapter)
         {
-            this.eDevletServiceAdapter = eDevletServiceAdapter;
+            _eDevletServiceAdapter = eDevletServiceAdapter;
         }
 
         public void Add(Player player)
         {
-            Console.WriteLine("Gamer to added" + " " +player.FirstName);
+            if(_eDevletServiceAdapter.Check(player))
+            {
+                Console.WriteLine("Gamer to added" + " " + player.FirstName);
+            }
+            else
+            {
+                Console.WriteLine("Gamer to  not added" + " " + player.FirstName);
+            }
         }
 
         public void Delete(Player player)
